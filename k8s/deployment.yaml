@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gophercon-deployment
+  labels:
+    app: gophercon
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gophercon
+  template:
+    metadata:
+      labels:
+        app: gophercon
+    spec:
+      containers:
+      - name: gophercon
+        image: agonzalezro/gophercon:latest # Don't use latest at home!
+        imagePullPolicy: Always
