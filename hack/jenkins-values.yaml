@@ -1,0 +1,11 @@
+Master:
+  AdminPassword: admin1234
+  InstallPlugins:
+    - kubernetes:1.9.2
+    - workflow-aggregator:2.5
+    - workflow-job:2.22
+    - credentials-binding:1.16
+    - git:3.9.1
+    - github:1.29.2
+rbac:
+  install: true
