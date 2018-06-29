@@ -1,6 +1,6 @@
 node {
   stage('hiworld') {
-    echo "It is alive"
+    echo "From PR"
   }
   stage('byeworld') {
     echo "byeeee"
