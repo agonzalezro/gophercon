@@ -9,7 +9,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-const message = "Hi Gophercon 2017!"
+const message = "Hi Gophercon 2018! It's 10:45 😬"
 
 func mainHandler(w http.ResponseWriter, req *http.Request) {
 	fmt.Fprintf(w, message)
